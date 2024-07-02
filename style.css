@@ -179,6 +179,10 @@ span{
     font-weight: bold;
 }
 
+.heading img{
+    width: 70px;
+}
+
 .about-content h2{
     text-align: left;
     line-height: 2.2;
@@ -199,6 +203,163 @@ span{
     background-color: aliceblue;
     gap: 2rem;
 }
+
+
+.experience-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.highlight {
+    display: inline-block;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.experience-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experience-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    min-width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.experience-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skill-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #4CAF50; /* Icon color */
+}
+
+.skill-icon img{
+    width: 2rem;
+
+}
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.skill-level {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.contact{
+    background: #d9f7ff;
+}
+
+.contact h1{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input and Textarea styling */
+.contact form .input-box {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.contact form input[type="text"],
+.contact form input[type="number"],
+.contact form textarea {
+    width: calc(50% - 5px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form textarea {
+    width: 100%;
+    resize: none;
+}
+
+.contact form input[type="submit"] {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-box {
+        width: 80%;
+    }
+}
+
+
 
 
 @media (max-width: 768px) {

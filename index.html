@@ -29,7 +29,7 @@
       <div class="logo">PortFolio.</div>
       <ul class="nav-links mt-3">
         <li><a href="#home">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -43,7 +43,7 @@
 
   <!--Home-->
 
-  <section class="home">
+  <section class="home" id="home">
     <div class="home-content">
       <h2>Hi There,</h2>
       <h1>I'm Ravindu Sahan</h1>
@@ -69,12 +69,12 @@
 
   <!--About-->
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-img">
       <img src="img/my-img.JPG" alt="" srcset="">
     </div>
     <div class="about-content">
-      <h1 class="heading"> About <span>Me</span></h1>
+      <h1 class="heading"> <img src="img/profile.png"> About <span>Me</span></h1>
       <h2>I'm Ravindu Sahan</h2>
       <h3>Software Engineer</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt assumenda, molestias at debitis voluptatum
@@ -90,10 +90,118 @@
   </section>
 
           <!--Experience-->
-  <section class="experience">
+  <section class="experience" id="experience">
+
+    <div class="experience-container">
+      <h1>Explore My <br> <span class="highlight">Experience</span></h1>
+      <div class="experience-section">
+          <div class="experience-box">
+              <h2>Frontend Development</h2>
+              <ul class="skills-list">
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">HTML</span>
+                          <span class="skill-level">Experienced</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">CSS</span>
+                          <span class="skill-level">Experienced</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">SASS</span>
+                          <span class="skill-level">Intermediate</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">JavaScript</span>
+                          <span class="skill-level">Basic</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">TypeScript</span>
+                          <span class="skill-level">Basic</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">Material UI</span>
+                          <span class="skill-level">Intermediate</span>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="experience-box">
+              <h2>Backend Development</h2>
+              <ul class="skills-list">
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">PostgreSQL</span>
+                          <span class="skill-level">Basic</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">Node JS</span>
+                          <span class="skill-level">Intermediate</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">Express JS</span>
+                          <span class="skill-level">Intermediate</span>
+                      </div>
+                  </li>
+                  <li>
+                      <span class="skill-icon"><img src="img/verify.png"></span>
+                      <div class="skill-info">
+                          <span class="skill-name">Git</span>
+                          <span class="skill-level">Intermediate</span>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+    
 
   </section>
 
+            <!--contact-->
+
+    <section class="contact" id="contact">
+      <h1 class="header">Get in <Span>Touch</Span></h1>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="text" placeholder="Email">
+
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Phone NUmber">
+          <input type="text" placeholder="Email Subject">
+        </div>
+
+        <textarea name="" id="" placeholder="Your Massage" rows="10" cols="25"></textarea>
+        <input type="submit" value="Send Massage" class="submit-btn">
+      </form>
+    </section>
 
   <script src="script.js"></script>
 </body>
