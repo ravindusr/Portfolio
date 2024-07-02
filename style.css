@@ -10,14 +10,24 @@ body {
     background-repeat: no-repeat;
 }
 
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Places the video behind other content */
+}
+
 .navbar {
     margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #b8b8b8;
+    color: black;
     border-radius: 50px;
 }
 
@@ -118,12 +128,78 @@ span{
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid blue;
     font-size: 2rem;
     color: #4770f8;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
+
+.social a:hover{
+    background: blueviolet;
+    color: rosybrown;
+    box-shadow: 0 0 1rem rgb(43, 28, 255);
+}
+
+.btn-primary{
+    background: #4770f8;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 1rem palegreen;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+
+}
+
+.btn-primary:hover{
+    background: blueviolet;
+    color: rosybrown;
+    box-shadow: none;
+}
+
+
+.about{
+    display: flex;
+    background: whitesmoke;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+.about-img img{
+    width: 30vw;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 2.2;
+}
+
+.about-content h3{
+    font-size: 1.2
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+
+.experience{
+    display: flex;
+    background-color: aliceblue;
+    gap: 2rem;
+}
+
 
 @media (max-width: 768px) {
     .nav-links {
