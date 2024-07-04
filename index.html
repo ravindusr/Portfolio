@@ -14,6 +14,18 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "your key",
+      });
+   })();
+</script>
+
 </head>
 
 <body>
@@ -197,18 +209,18 @@
 
       <form action="#">
         <div class="input-box">
-          <input type="text" id="name" class="item" autocomplete="off" placeholder="Full Name">
+          <input type="text" id="name" class="item" autocomplete="off" placeholder="Full Name"> 
           <input type="text" id="email" class="item" autocomplete="off" placeholder="Email">
         </div>
         
         <div class="input-box">
-          <input type="number" id="phonenumber" class="item" autocomplete="off" placeholder="Phone Number">
+          <input type="text" id="phonenum" class="item" autocomplete="off" placeholder="Phone Number">
           <input type="text" id="subject" class="item" autocomplete="off" placeholder="Email Subject">
         </div>
 
-        <textarea name="" class="txt item" id="massage" autocomplete="off" placeholder="Your Massage" rows="8" cols="25"></textarea>
+        <textarea name="" class="txt item" id="message" autocomplete="off" placeholder="Your Massage" rows="8" cols="25"></textarea>
 
-        <input type="submit" value="Send Massage" class="submit-btn">
+        <input onclick="sendMail()" type="submit" value="Send Massage" class="submit-btn" >
         
       </form>
     </div>
@@ -236,7 +248,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
+  
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

@@ -27,3 +27,33 @@ const typed =new Typed('.multiple-text',{
     backDelay:1000,
     loop: true,
 });
+
+function sendMail(){
+    var params={
+        name : document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+        subject: document.getElementById("subject").value,
+        phonenum: document.getElementById("phonenum").value,
+    };
+
+    const serviceID = "your key";
+    const templateID = "your key";
+
+emailjs.send(serviceID,templateID,params)
+.then(
+    res =>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("phonenum").value = "";
+        console.log(res);
+        alert("Message Sent Succesfully");
+    })
+    .catch((err) => console.log(err));
+    
+}
+
+
+    
